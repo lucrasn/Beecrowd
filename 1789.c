@@ -1,7 +1,7 @@
 /*
 
     @author: lucrasn;
-    @date: 21/08/2024;
+    @date: 22/08/2024;
     @problem: A Corrida de Lesmas;
 
 */
