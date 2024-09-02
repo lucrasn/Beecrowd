@@ -3,6 +3,7 @@ output/
 
 # arquivo de testes
 testes.c
+veri.py
 
 # config vscode
 .vscode/
