@@ -13,21 +13,22 @@
 int main() {
     float suport, max_linhas_pagina, max_caracteres_linha;
     int num_palavras, caracteres, n_linhas, n_paginas;
-    char texto[500];
+    char texto[501];
 
-    scanf("%d %f %f", &num_palavras, &max_linhas_pagina, &max_caracteres_linha);
-    getchar(); // melzinho na chupeta - sempre esqueço como é possivel
-    fgets(texto, sizeof(texto), stdin);
+    while(scanf("%d %f %f", &num_palavras, &max_linhas_pagina, &max_caracteres_linha) != EOF) {
+        getchar(); // melzinho na chupeta - sempre esqueço como é possivel
+        fgets(texto, sizeof(texto), stdin);
 
-    caracteres = strlen(texto) - 1;
+        caracteres = strlen(texto) - 1;
 
-    suport = caracteres / max_caracteres_linha;
-    n_linhas = (int)ceil(suport);
+        suport = caracteres / max_caracteres_linha;
+        n_linhas = (int)ceil(suport);
 
-    suport = n_linhas / max_linhas_pagina;
-    n_paginas = (int)ceil(suport);
+        suport = n_linhas / max_linhas_pagina;
+        n_paginas = (int)ceil(suport);
 
-    printf("%d\n", n_paginas);
+        printf("%d\n", n_paginas);
+    } // while até não ter entrada
 
     return 0;
 } // main
