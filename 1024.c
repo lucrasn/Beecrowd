@@ -11,7 +11,7 @@
 #include <ctype.h>
 
 int main() {
-    char frase[100];
+    char frase[10001];
 
     int num;
     scanf("%d", &num);
@@ -44,10 +44,7 @@ int main() {
 
         // teceira criptografia
         for (int j = len_met; j < len; j++) {
-            if (frase[j] != ' ') {
                 frase[j] -= 1;
-
-            } // if sub sub
         } // for sub
 
         printf("%s", frase); // não preciso colocar o \n porque a variável frase ja tem;
