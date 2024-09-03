@@ -42,7 +42,7 @@ int main() {
     fgets(txt2, sizeof(txt2), stdin);
 
     int result = maior_substring_comum(txt1, txt2);
-    printf("%d\n", result);
+    printf("%d", result);
 
     return 0;
 } // main
