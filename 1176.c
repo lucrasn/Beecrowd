@@ -10,6 +10,7 @@
 /// soma dos 2 anteriores a ele
 
 #include <stdio.h>
+// #include <inttypes.h>
 
 int main() {
     int n_testes, n_termo;
@@ -19,6 +20,7 @@ int main() {
         scanf("%d", &n_termo);
 
         unsigned long long fib[4] = {0, 0, 0, 0};
+        // uint64_t fib[4] = {0, 0, 0, 0};
 
         if (n_termo == 1) {
             fib[2] = 1; // {0, 0, 1, 0}
@@ -35,7 +37,8 @@ int main() {
         } // if
 
         printf("Fib(%d) = %llu\n", n_termo, fib[2]);
-        
+        // printf("Fib(%d) = %" PRIu64 "\n", n_termo, fib[2]);
+
     } // for
     return 0;
 } // main
