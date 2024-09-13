@@ -1,8 +1,8 @@
 /*
 
     @author: lucrasn;
-    @date: 12/09/2024;
-    @problem: Matriz Quadrada I;
+    @date: 13/09/2024;
+    @problem: Matriz Quadrada II;
 
 */
 
