@@ -38,7 +38,7 @@ int main() {
 
         } // for linha
 
-        // descobrindo o tamanho do ultimo elemento para colocar do jeito que a questão quer
+        // descobrindo a quantidade de caracteres do ultimo elemento
         char suport[10];
         sprintf(suport, "%d", M[ordem - 1][ordem - 1]);
         int T = strlen(suport);
