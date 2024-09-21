@@ -45,4 +45,4 @@ int main() {
     printf("%d\n", termo);
 
     return 0;
-} //  main
+} // main
