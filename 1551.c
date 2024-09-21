@@ -2,7 +2,7 @@
 
     @author: lucrasn;
     @date: 21/09/2024;
-    @problem: Comparação de Substring;
+    @problem: Frase Completa;
 
 */
 
