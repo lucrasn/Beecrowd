@@ -41,4 +41,4 @@ int main() {
         printf("%.1f\n", prob * 100);
     }
     return 0;
-}
+} // main
