@@ -8,27 +8,39 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 
-int main() {
-    float suport, max_linhas_pagina, max_caracteres_linha;
-    int num_palavras, caracteres, n_linhas, n_paginas;
-    char texto[501];
+int main () {
 
-    while(scanf("%d %f %f", &num_palavras, &max_linhas_pagina, &max_caracteres_linha) != EOF) {
-        getchar(); // melzinho na chupeta - sempre esqueço como é possivel
-        fgets(texto, sizeof(texto), stdin);
+	int n_linhas, n_caracteres, n_palavras, len;
+	int linhas, paginas, letras;
+	char palavra[71];
 
-        caracteres = strlen(texto) - 1;
+	while (scanf("%d %d %d", &n_palavras, &n_linhas, &n_caracteres) != EOF) {
 
-        suport = caracteres / max_caracteres_linha;
-        n_linhas = (int)ceil(suport);
+		paginas = linhas = 1;
+		scanf("%s", palavra);
+		letras = strlen(palavra);
 
-        suport = n_linhas / max_linhas_pagina;
-        n_paginas = (int)ceil(suport);
+		n_palavras--;
+		for (int i = 0; i < n_palavras; ++i) {
+			scanf("%s", palavra);
+			len = strlen(palavra);
 
-        printf("%d\n", n_paginas);
-    } // while até não ter entrada
+			if ((letras + len + 1) <= n_caracteres) {
+				letras += len + 1;
+			} else {
+				++linhas;
 
+				if (linhas > n_linhas) {
+					++paginas, linhas = 1;
+                } // if sub
+
+				letras = len;
+			} // if
+		} // for
+
+		printf("%d\n", paginas);
+
+	} // while
     return 0;
 } // main
