@@ -42,4 +42,4 @@ int main() {
         printf("DDD nao cadastrado\n");
     }
     return 0;
-}
+} // main
