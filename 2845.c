@@ -2,7 +2,7 @@
 
     @author: lucrasn;
     @date: 09/08/2024;
-    @problem: Festa no Polo norte;
+    @problem: Festa no Polo Norte;
 
 */
 
@@ -26,4 +26,4 @@ int main() {
     printf("%d\n", ++conv);
 
     return 0;
-}
+} // main
