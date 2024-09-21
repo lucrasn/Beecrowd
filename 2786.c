@@ -24,4 +24,4 @@ int main () {
 
     printf("Total de lajotas do tipo 1: %d\nTotal de lajotas do tipo 2: %d", lajota_1, lajota_2);
     return 0;
-}
+} // main
